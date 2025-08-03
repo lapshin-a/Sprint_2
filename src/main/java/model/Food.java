@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Food {
+public abstract class Food implements Discountable {
     protected int amount;       // количество продукта в килограммах
     protected double price;     // цена за единицу
     protected boolean isVegetarian; // флаг вегетарианского продукта
@@ -22,4 +22,8 @@ public abstract class Food {
     public boolean isVegetarian() {
         return isVegetarian;
     }
+
+    // Реализация метода getDiscount() из интерфейса Discountable
+    @Override
+    public abstract double getDiscount();
 }
