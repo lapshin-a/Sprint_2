@@ -22,8 +22,4 @@ public abstract class Food implements Discountable {
     public boolean isVegetarian() {
         return isVegetarian;
     }
-
-    // Реализация метода getDiscount() из интерфейса Discountable
-    @Override
-    public abstract double getDiscount();
 }
